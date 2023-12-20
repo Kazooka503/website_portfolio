@@ -1,5 +1,29 @@
+:root{
+    --black_feather: #0F2026;
+    --sea_of_atlantis: #2E5559;
+    --oil_blue: #648C85;
+    --mount_hyjal: #39733D;
+    --winter_morn: #D9D8D7;
+}
+
 body{
-    background-color:#F8F8F8!important;
+    background-color: var(--black_feather);
+}
+
+hr{
+    color: var(--sea_of_atlantis);
+}
+
+h4{
+    color: var(--mount_hyjal);
+}
+
+.card{
+    background-color: var(--black_feather);
+}
+
+.pos-header{
+    color: var(--oil_blue) !important;
 }
 
 #profile-wrapper{
@@ -30,5 +54,10 @@ ul{
 }
 
 .header{
+    color: var(--sea_of_atlantis);
     font-weight: 600;
+}
+
+p{
+    color: var(--winter_morn);
 }
