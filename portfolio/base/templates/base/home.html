@@ -3,104 +3,252 @@
     <html>
         <head>
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
             <link href="{% static '/css/main.css' %}" rel="stylesheet" type="text/css">
             <title>Austin Krzciok</title>
         </head>
         <body>
-            <br>
-            <div class="container">
+            <div id="main" class="container">
                 <div class="row">
-                    <div class="col-md-3">
-                        <div id="profile-wrapper" class="card card-body border-0 h-100 justify-content-center">
-                            <img id="profile-pic" src="{% static 'images/selfie.jpg' %}">
-                            <br>
-                            <h4>Hi I'm Austin!</h4>
-                            <p>I love coding, doing research, and collaborating!</p>
+                    <div id="left-section" class="col">
+                        <div class="sticky-top">
+                            <div class="row">
+                            <div id="profile-wrapper" class="card card-body border-0 h-100 ">
+                            <h1 id="title_header">Austin Krzciok</h1>
+                            <h5 id="title_subheader">Full Stack Software and Web Developer</h5>
+                            <p>I build software and web applications that solve problems, <br>
+                            they also look good too!</p>
+                            </div>
+                            </div>
+                            <div class="row">
+                            <nav>
+                            <div class="nav-menu">
+                            <a class="nav-link active" href="#"><hr class="nav-line active-line"/>About</a>
+                            <a class="nav-link" href="#"><hr class="nav-line"/>Experience</a>
+                            <a class="nav-link" href="#"><hr class="nav-line"/>Projects</a>
+                            </div>
+                            </nav>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-9">
-                        <div class="card card-body border-0">
-                            <h4 class="header">Developer Profile</h4>
-                            <hr>
-                            <p>Back in the early 2000s, I decided to try my hand at creating custom MySpace themes
-                            and fell head first into the rabbit hole of coding and web development. Fast-forward to
-                            today, and I've had the privilege of building software for a livestreaming startup, a global
-                            engineering solutions provider, and an information technology consultation firm.</p>
-                            <br>
-                            <p>I'm currently open for new roles and experiences, please don't hesitate to reach out if
-                            you would like to collaborate and work on your project!</p>
-                            <br>
-                            <p>When I'm not at the computer, I'm usually hiking with my dog Loki, rooting for soccer
-                            teams, or trying to find video games that keep me engaged.</p>
+                    <div id="right-section" class="col">
+                        <div class="row profile-row">
+                            <div class="card card-body border-0 h-100">
+                                <p>Back in the early 2000s I decided to try my hand at creating custom MySpace themes
+                                and I fell head first into the rabbit hole of coding and web development. Fast-forward
+                                to today, and I've had the privilege of building software for a <a class="work-link" href="https://active-track.com/" target="_blank">livestream startup</a>, a
+                                <a class="work-link" href="https://www.novuslabs.com/" target="_blank">global engineering solutions provider</a>, and an
+                                <a class="work-link" href="https://learncodinganywhere.com/ProsperITConsulting" target="_blank">information technology consultation firm.</a>
+                                </p>
+                                <p>
+                                During my time in development I've worked extensively in both front-end and back-end
+                                operations, architecting the structure and presentation of web and
+                                software applications. I'm well versed in Linux/Debian based systems and have direct
+                                work experience managing custom developed remote cloud services and servers. I am well
+                                suited to working independently in remote environments and have spent time working in
+                                AGILE/SCRUM teams.
+                                </p>
+                                <p>
+                                In my off time I'm usually exploring new places with my dog Loki, diving into the
+                                <a class="work-link" href="https://www.instagram.com/brightsidesocialclub/">live music scene here in Portland</a>,
+                                going to <a class="work-link" href="https://www.timbers.com/schedule/">soccer games</a>,
+                                or nerding out on things I find on the web.
+                                </p>
+                                <p>
+                                I'm currently open for new roles and experiences, please don't hesitate to reach out if
+                                you would like to collaborate on your project!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row wh-row">
+                            <div class="col-3">
+                                <h6 class="year-header">2020 - 2023</h6>
+                            </div>
+                            <div class="col-9">
+                                <div class="row">
+                                   <h6 class="job-header">Software Developer <span class="accent">•</span> Novus Labs</h6>
+                                </div>
+                                <div class="row">
+                                    <p class="job-content">Built and maintained critical components used to construct client's frontend, backend,
+                                    and entire web-product architecture. Worked closely with cross-functional teams, including other
+                                    developers, product managers, and Q/A engineers to implement features, services, and upgrades
+                                    for a variety of use-cases.</p>
+                                </div>
+                                <span class="badge badge-skill">JavaScript</span> <span class="badge badge-skill">Python</span>
+                                <span class="badge badge-skill">Django</span> <span class="badge badge-skill">AWS</span>
+                                <span class="badge badge-skill">Java</span>
+                            </div>
+                        </div>
+                        <div class="row wh-row">
+                            <div class="col-3">
+                                <h6 class="year-header">2020</h6>
+                            </div>
+                            <div class="col-9">
+                                <div class="row">
+                                   <h6 class="job-header">Dotnet Developer <span class="accent">•</span> Prosper IT Consulting</h6>
+                                </div>
+                                <div class="row">
+                                    <p class="job-content">Immersed myself in an Agile/Scrum development setting, collaborating with a team to
+                                    craft a content mangement system for a local theater company's website. Engaging with
+                                    .NET Framework in a significant project proved to be an invaluable learning journey,
+                                    affording me hands on understanding of Entity Framework. Throughout this project
+                                    I tackled diverse code bugs and divised innovative solutions to an array of challenges.</p>
+                                </div>
+                                <span class="badge badge-skill">C#</span> <span class="badge badge-skill">ASP.NET</span>
+                                <span class="badge badge-skill">.NET Framework</span> <span class="badge badge-skill">MVC</span>
+                                <span class="badge badge-skill">AGILE/SCRUM</span>
 
-                            <ul class="social-links">
-                                <li><a href="https://github.com/Kazooka503" target="_blank"><img class="social" src="{% static 'images/github.png' %}"></a></li>
-                                <li><a href="https://www.linkedin.com/in/austin-krzciok/" target="_blank"><img class="social" src="{% static 'images/linkedin.png' %}"></a></li>
-                                <li><a href="https://www.instagram.com/revoltingk/" target="_blank"><img class="social" src="{% static 'images/instagram.png' %}"></a></li>
-                            </ul>
+                            </div>
+                        </div>
+                        <div class="row wh-row">
+                            <div class="col-3">
+                                <h6 class="year-header">2020</h6>
+                            </div>
+                            <div class="col-9">
+                                <div class="row">
+                                   <h6 class="job-header">Django Developer <span class="accent">•</span> Prosper IT Consulting</h6>
+                                </div>
+                                <div class="row">
+                                    <p class="job-content">Immersed myself in an Agile/Scrum development setting, collaborating closely with
+                                    a team of peers to create diverse web applications aimed at tracking and cataloging
+                                    a wide range of hobbies and interests. Delving into Django in a significant project proved to be an enriching learning
+                                    experience, allowing me to deepen my understanding of MVT architecture and its
+                                    seemless integration with SQL databases.</p>
+                                </div>
+                                <span class="badge badge-skill">SQL</span> <span class="badge badge-skill">Python</span>
+                                <span class="badge badge-skill">Django</span>
+                                <span class="badge badge-skill">JavaScript</span> <span class="badge badge-skill">AGILE/SCRUM</span>
 
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <div class="row align-items-center">
-                    <div class="col-md-6">
-                        <div class="card card-body border-0">
-                            <h5 class="header">Experience</h5>
-                            <hr>
-                            <h6 class="header pos-header">Software Developer at Novus Labs</h6>
-                            <p>Developed a livestreaming platform used to broadcast real time video of marathons and
-                            other races in remote outdoor locations. This platform included a custom web application
-                            powered by Django/Python where users could log in and watch races live. Additionally, I
-                            developed a custom network bonding software/hardware platform which allowed for broadcasting
-                            live video in low connectivity outdoor locations.</p>
-                            <p>In addition, I created various Python and Java based software solutions for a variety of
-                            use-cases related to computer vision and hardware testing. Technologies utilized included
-                            OpenCV, BoofCV, AWS, BitBucket, and JavaScript.</p>
-                            <hr>
-                            <h6 class="header pos-header">Full Stack Developer at Prosper IT Consulting</h6>
-                            <p>Worked directly in an Agile/Scrum development environment on a variety of projects
-                            including a content management system for a local production theater company. Utilized
-                            ASP.NET & C# that provided an excellent learning experience in understanding MVC &
-                            Entity Framework on deeper level. Created a Django based web application that allowed for
-                            the tracking and cataloging of inventory. This provided a great opportunity to learn
-                            Django's MVT structure with a direct relation to a SQL database.
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="row">
-                            <div class="card card-body border-0">
-                                <h5 class="header">What I Know</h5>
-                                <hr>
-                                <p>Python, Django, HTML/CSS, JavaScript, React, AWS, APIs, and a whole lot more that I
-                                can't possibly mention in one sentence! :)</p>
-                                <p>Currently expanding my skills in DevOps, Node.js, and Data Science.</p>
                             </div>
                         </div>
-                        <br>
-                        <div class="row">
-                            <div class="card card-body border-0">
-                                <h5 class="header">How I Learn</h5>
-                                <hr>
-                                <p>Reverse Engineer & Build Prototypes First</p>
-                                <p>I can learn just about anything by having a final product to tear apart and examine
-                                piece by piece. I break code where I need to figure out why things work the way they do.
-                                Documentation is key, but ultimately is just a reference.</p>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="row">
-                            <div class="card card-body border-0">
-                                <h5 class="header">My Short Term Goals</h5>
-                                <hr>
-                                <p>After almost three years of supporting my codebases at the lab I'm ready to learn
-                                something new! I'm looking to expand my development skills into new areas and work with
-                                teams to produce innovative new solutions and products. I would love a position where I
-                                can be part of a bigger team and learn from others with more experience than myself.</p>
-                            </div>
+                        <div class="row profile-row">
+                            <a href="#" class="cv-link">View Full Resume <span class="arrow">↱</span></a>
                         </div>
                     </div>
                 </div>
             </div>
         </body>
     </html>
+
+<script>
+    const btns = document.getElementsByClassName("nav-link");
+    for (var i = 0; i < btns.length; i++){
+        btns[i].addEventListener("click", function(){
+            var current = document.getElementsByClassName("active");
+            var currentChildren = current[0].getElementsByTagName("hr");
+            current[0].className = current[0].className.replace(" active", "");
+            currentChildren[0].className = currentChildren[0].className.replace(" active-line", "");
+            this.className += " active";
+            this.getElementsByTagName("hr")[0].className += " active-line";
+        });
+    }
+</script>
+
+
+
+
+
+<!--          <div class="row">-->
+<!--                    <div class="col">-->
+<!--                        <div class="row">-->
+<!--                            <div id="profile-wrapper" class="card card-body border-0 h-100 ">-->
+<!--                                <h1 id="title_header">Austin Krzciok</h1>-->
+<!--                                <h5 id="title_subheader">Full Stack Software and Web Developer</h5>-->
+<!--                                <p>I build software and web applications that solve problems, <br>-->
+<!--                                    but also look good too!</p>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="row">-->
+<!--                            <nav>-->
+<!--                                <div class="nav-menu">-->
+<!--                                    <a href="">About</a>-->
+<!--                                    <a href="">Experience</a>-->
+<!--                                    <a href="">Projects</a>-->
+<!--                                </div>-->
+<!--                            </nav>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="col">-->
+<!--                        <div class="card card-body border-0">-->
+<!--                            <h4 class="header section-header">Developer Profile</h4>-->
+<!--                            <hr>-->
+<!--                            <p>Back in the early 2000s, I decided to try my hand at creating custom MySpace themes-->
+<!--                            and fell head first into the rabbit hole of coding and web development. Fast-forward to-->
+<!--                            today, and I've had the privilege of building software for a livestreaming startup, a global-->
+<!--                            engineering solutions provider, and an information technology consultation firm.</p>-->
+
+<!--                            <p>I'm currently open for new roles and experiences, please don't hesitate to reach out if-->
+<!--                            you would like to collaborate and work on your project!</p>-->
+
+<!--                            <p>When I'm not at the computer, I'm usually hiking with my dog Loki, rooting for soccer-->
+<!--                            teams, or trying to find video games that keep me engaged.</p>-->
+
+<!--                            <ul class="social-links">-->
+<!--                                <li><a href="https://github.com/Kazooka503" target="_blank"><img class="social" src="{% static 'images/github.png' %}"></a></li>-->
+<!--                                <li><a href="https://www.linkedin.com/in/austin-krzciok/" target="_blank"><img class="social" src="{% static 'images/linkedin.png' %}"></a></li>-->
+<!--                                <li><a href="https://www.instagram.com/revoltingk/" target="_blank"><img class="social" src="{% static 'images/instagram.png' %}"></a></li>-->
+<!--                            </ul>-->
+
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="row align-items-center">-->
+<!--                    <div class="col-md-6">-->
+<!--                        <div class="card card-body border-0">-->
+<!--                            <h5 class="header section-header">Experience</h5>-->
+<!--                            <hr>-->
+<!--                            <h6 class="header pos-header">Software Developer at Novus Labs</h6>-->
+<!--                            <p>Developed a livestreaming platform used to broadcast real time video of marathons and-->
+<!--                            other races in remote outdoor locations. This platform included a custom web application-->
+<!--                            powered by Django/Python where users could log in and watch races live. Additionally, I-->
+<!--                            developed a custom network bonding software/hardware platform which allowed for broadcasting-->
+<!--                            live video in low connectivity outdoor locations.</p>-->
+<!--                            <p>In addition, I created various Python and Java based software solutions for a variety of-->
+<!--                            use-cases related to computer vision and hardware testing. Technologies utilized included-->
+<!--                            OpenCV, BoofCV, AWS, BitBucket, and JavaScript.</p>-->
+<!--                            <hr>-->
+<!--                            <h6 class="header pos-header">Full Stack Developer at Prosper IT Consulting</h6>-->
+<!--                            <p>Worked directly in an Agile/Scrum development environment on a variety of projects-->
+<!--                            including a content management system for a local production theater company. Utilized-->
+<!--                            ASP.NET & C# that provided an excellent learning experience in understanding MVC &-->
+<!--                            Entity Framework on deeper level. Created a Django based web application that allowed for-->
+<!--                            the tracking and cataloging of inventory. This provided a great opportunity to learn-->
+<!--                            Django's MVT structure with a direct relation to a SQL database.-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="col-md-6">-->
+<!--                        <div class="row">-->
+<!--                            <div class="card card-body border-0">-->
+<!--                                <h5 class="header section-header">What I Know</h5>-->
+<!--                                <hr>-->
+<!--                                <p>Python, Django, HTML/CSS, JavaScript, React, AWS, APIs, and a whole lot more that I-->
+<!--                                can't possibly mention in one sentence! :)</p>-->
+<!--                                <p>Currently expanding my skills in DevOps, Node.js, and Data Science.</p>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <br>-->
+<!--                        <div class="row">-->
+<!--                            <div class="card card-body border-0">-->
+<!--                                <h5 class="header section-header">How I Learn</h5>-->
+<!--                                <hr>-->
+<!--                                <p>Reverse Engineer & Build Prototypes First</p>-->
+<!--                                <p>I can learn just about anything by having a final product to tear apart and examine-->
+<!--                                piece by piece. I break code where I need to figure out why things work the way they do.-->
+<!--                                Documentation is key, but ultimately is just a reference.</p>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <br>-->
+<!--                        <div class="row">-->
+<!--                            <div class="card card-body border-0">-->
+<!--                                <h5 class="header section-header">My Short Term Goals</h5>-->
+<!--                                <hr>-->
+<!--                                <p>After almost three years of supporting my codebases at the lab I'm ready to learn-->
+<!--                                something new! I'm looking to expand my development skills into new areas and work with-->
+<!--                                teams to produce innovative new solutions and products. I would love a position where I-->
+<!--                                can be part of a bigger team and learn from others with more experience than myself.</p>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->

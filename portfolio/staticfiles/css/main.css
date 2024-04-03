@@ -10,6 +10,14 @@ body{
     background-color: var(--black_feather);
 }
 
+#main{
+    margin-top: 5em;
+}
+
+#left-section{
+
+}
+
 hr{
     color: var(--sea_of_atlantis);
 }
@@ -23,20 +31,22 @@ h4{
 }
 
 .pos-header{
-    color: var(--oil_blue) !important;
+    color: var( --mount_hyjal) !important;
 }
 
 #profile-wrapper{
-    text-align: center;
+/*    text-align: center;*/
 }
 
-#profile-pic{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-left: auto;
-    margin-right: auto;
+#profile-wrapper p{
+    font-size: 1em !important;
+    color: var(--oil_blue);
 }
+
+p{
+    font-size: 1.1em;
+}
+
 
 ul{
     padding: 0;
@@ -53,11 +63,127 @@ ul{
     height: 20px;
 }
 
+#title_header{
+    color: var(--winter_morn);
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 60px;
+}
+
+#title_subheader{
+    color: var(--winter_morn);
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+}
+
 .header{
-    color: var(--sea_of_atlantis);
+    color: var(--oil_blue);
     font-weight: 600;
+}
+
+.section-header{
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
 }
 
 p{
     color: var(--winter_morn);
+}
+
+.nav-line{
+    margin-right: 1rem;
+    float: left;
+    width: 10%;
+    transition: 1s;
+}
+
+.nav-menu a {
+    color: var(--sea_of_atlantis);
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.1rem;
+    display: block;
+    text-decoration: none;
+    margin-top: 1em;
+    transition: .5s;
+}
+
+.active, .nav-menu a:hover{
+    color: var(--winter_morn) !important;
+    padding-left: 2em;
+}
+
+.active-line, .nav-menu a:hover .nav-line{
+    color: var(--winter_morn);
+    margin-right: 1rem;
+    float: left;
+    width: 15%;
+}
+
+.work-link{
+    color: var(--oil_blue);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.work-link:hover{
+    color: var(--mount_hyjal)
+}
+
+.profile-row{
+    margin-bottom: 6rem;
+}
+
+.year-header{
+    color: var(--oil_blue);
+}
+
+.job-header{
+    color: var(--winter_morn);
+    font-size: 1.1rem;
+}
+
+.job-content{
+    color: var(--oil_blue);
+}
+
+.accent{
+    font-size: 1rem;
+}
+
+.badge-skill{
+    color: var(--black_feather);
+    background-color: var(--oil_blue);
+}
+
+.wh-row{
+    margin-bottom: 1.1rem;
+}
+
+.wh-row:hover{
+    background: rgba(217, 216, 215, .1);
+}
+
+.cv-link{
+    color: var(--winter_morn);
+    font-weight: 600;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.arrow{
+    transition: .3s;
+}
+
+.cv-link:hover{
+    color: var(--mount_hyjal);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.cv-link:hover .arrow{
+    color: var(--mount_hyjal);
+    font-weight: 600;
+    padding-left: .3rem;
+    text-decoration: none;
 }
