@@ -6,16 +6,23 @@
     --winter_morn: #D9D8D7;
 }
 
+.fa-brands{
+    color: var(--oil_blue);
+    padding-right: .7em;
+    padding-bottom: 2em;
+    transition: .3s;
+}
+
+.fa-brands:hover{
+    color: var(--winter_morn);
+}
+
 body{
     background-color: var(--black_feather);
 }
 
-#main{
-    margin-top: 5em;
-}
-
-#left-section{
-
+.card{
+    background-color: var(--black_feather);
 }
 
 hr{
@@ -26,60 +33,8 @@ h4{
     color: var(--mount_hyjal);
 }
 
-.card{
-    background-color: var(--black_feather);
-}
-
 .pos-header{
     color: var( --mount_hyjal) !important;
-}
-
-#profile-wrapper{
-/*    text-align: center;*/
-}
-
-#profile-wrapper p{
-    font-size: 1em !important;
-    color: var(--oil_blue);
-}
-
-p{
-    font-size: 1.1em;
-}
-
-
-ul{
-    padding: 0;
-    list-style-type: none;
-}
-
-.social-links ul, li{
-    list-style-type: none;
-    display: inline-block;
-}
-
-.social{
-    width: 20px;
-    height: 20px;
-}
-
-#title_header{
-    color: var(--winter_morn);
-    font-family: 'DM Serif Display', serif;
-    font-weight: 400;
-    font-style: italic;
-    font-size: 60px;
-}
-
-#title_subheader{
-    color: var(--winter_morn);
-    font-family: 'DM Serif Display', serif;
-    font-weight: 400;
-}
-
-.header{
-    color: var(--oil_blue);
-    font-weight: 600;
 }
 
 .section-header{
@@ -87,37 +42,83 @@ ul{
     font-weight: 400;
 }
 
+#profile-wrapper p{
+    font-size: 1em !important;
+    color: var(--oil_blue);
+}
+
+#left-section-container{
+    padding-left: .5em;
+    padding-top: 2.5em;
+}
+
+#title_header{
+    color: var(--winter_morn);
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 3.3em;
+}
+
+#title_subheader{
+    color: var(--winter_morn);
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+    font-size: 1.2em;
+}
+
+.header{
+    color: var(--oil_blue);
+    font-weight: 600;
+}
+
 p{
     color: var(--winter_morn);
+    font-size: 1.1em;
 }
 
-.nav-line{
-    margin-right: 1rem;
-    float: left;
-    width: 10%;
-    transition: 1s;
+.nav-menu{
+    display: none;
 }
 
-.nav-menu a {
-    color: var(--sea_of_atlantis);
-    font-family: 'DM Serif Display', serif;
-    font-size: 1.1rem;
-    display: block;
-    text-decoration: none;
-    margin-top: 1em;
-    transition: .5s;
+#nav-row{
+    padding-top: 1em;
 }
 
-.active, .nav-menu a:hover{
-    color: var(--winter_morn) !important;
-    padding-left: 2em;
-}
-
-.active-line, .nav-menu a:hover .nav-line{
+#title_header{
     color: var(--winter_morn);
-    margin-right: 1rem;
-    float: left;
-    width: 15%;
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 2.5em;
+    padding-bottom: .1em;
+}
+
+#title_subheader{
+    color: var(--winter_morn);
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+    padding-bottom: .5em;
+}
+
+#subheader-content{
+    color: var(--oil_blue);
+}
+
+.fa-brands{
+    color: var(--oil_blue);
+    padding-right: 1em;
+    padding-bottom: 5em;
+    transition: .3s;
+}
+
+.fa-brands:hover{
+    color: var(--winter_morn);
+}
+
+ul{
+    padding: 0;
+    list-style-type: none;
 }
 
 .work-link{
@@ -131,7 +132,7 @@ p{
 }
 
 .profile-row{
-    margin-bottom: 6rem;
+    margin-bottom: 6rem !important;
 }
 
 .year-header{
@@ -143,8 +144,14 @@ p{
     font-size: 1.1rem;
 }
 
+.link-arrow{
+    font-size: 1.3rem;
+    transition: .5s;
+}
+
 .job-content{
     color: var(--oil_blue);
+    transition: 1s;
 }
 
 .accent{
@@ -152,16 +159,29 @@ p{
 }
 
 .badge-skill{
-    color: var(--black_feather);
-    background-color: var(--oil_blue);
+    color: var(--winter_morn);
+    background-color: var(--black_feather);
+    border: var(--sea_of_atlantis) solid .3px;
 }
 
 .wh-row{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     margin-bottom: 1.1rem;
+    position: sticky;
 }
 
 .wh-row:hover{
     background: rgba(217, 216, 215, .1);
+    border-radius: 15px;
+}
+
+.wh-row:hover .job-content{
+    color: var(--winter_morn);
+}
+
+.wh-row:hover .link-arrow{
+    padding-left: .5rem;
 }
 
 .cv-link{
@@ -186,4 +206,203 @@ p{
     font-weight: 600;
     padding-left: .3rem;
     text-decoration: none;
+}
+
+.build-text{
+    color: var(--oil_blue);
+    font-size: .8rem;
+}
+
+.build-link{
+    color: var(--winter_morn);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.build-link:hover{
+    color: var(--mount_hyjal)
+}
+
+.sticky-header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.sticky-header-content{
+    color: var(--winter_morn);
+    font-family: 'DM Serif Display', serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 1.3em;
+}
+
+
+@media only screen and (min-width: 576px) {
+
+    #title_header{
+        color: var(--winter_morn);
+        font-family: 'DM Serif Display', serif;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 4em;
+    }
+
+    .sticky-header{
+        display: none;
+    }
+
+    .nav-menu{
+        display: block;
+    }
+
+    #nav-row{
+        padding-top: 2em;
+    }
+
+    #left-section-container{
+        height:100vh;
+        padding-top: 5em;
+
+    }
+
+    #right-section{
+        margin-top: 5em;
+        margin-bottom: 5em;
+    }
+
+    .nav-line{
+        margin-right: 1rem;
+        float: left;
+        width: 10%;
+        transition: 1s;
+    }
+
+    .nav-menu a {
+        color: var(--sea_of_atlantis);
+        font-family: 'DM Serif Display', serif;
+        font-size: 1.1rem;
+        display: block;
+        text-decoration: none;
+        margin-top: 1em;
+        transition: .5s;
+    }
+
+    .active, .nav-menu a:hover{
+        color: var(--winter_morn) !important;
+        padding-left: 2em;
+    }
+
+    .active-line, .nav-menu a:hover .nav-line{
+        color: var(--winter_morn);
+        margin-right: 1rem;
+        float: left;
+        width: 15%;
+    }
+
+
+
+    .profile-row{
+        margin-bottom: 6rem !important;
+    }
+
+    .year-header{
+        color: var(--oil_blue);
+    }
+
+    .job-header{
+        color: var(--winter_morn);
+        font-size: 1.1rem;
+    }
+
+    .link-arrow{
+        font-size: 1.3rem;
+        transition: .5s;
+    }
+
+    .job-content{
+        color: var(--oil_blue);
+        transition: 1s;
+    }
+
+    .accent{
+        font-size: 1rem;
+    }
+
+    .badge-skill{
+        color: var(--winter_morn);
+        background-color: var(--black_feather);
+        border: var(--sea_of_atlantis) solid .3px;
+    }
+
+    .wh-row{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin-bottom: 1.1rem;
+        position: sticky;
+    }
+
+    .wh-row:hover{
+        background: rgba(217, 216, 215, .1);
+        border-radius: 15px;
+    }
+
+    .wh-row:hover .job-content{
+        color: var(--winter_morn);
+    }
+
+    .wh-row:hover .link-arrow{
+        padding-left: .5rem;
+    }
+
+    .cv-link{
+        color: var(--winter_morn);
+        font-weight: 600;
+        text-decoration: none;
+        transition: .3s;
+    }
+
+    .arrow{
+        transition: .3s;
+    }
+
+    .cv-link:hover{
+        color: var(--mount_hyjal);
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .cv-link:hover .arrow{
+        color: var(--mount_hyjal);
+        font-weight: 600;
+        padding-left: .3rem;
+        text-decoration: none;
+    }
+
+    .build-text{
+        color: var(--oil_blue);
+        font-size: .8rem;
+    }
+
+    .build-link{
+        color: var(--winter_morn);
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    .build-link:hover{
+        color: var(--mount_hyjal)
+    }
+
+    .fa-brands{
+        color: var(--oil_blue);
+        padding-right: .7em;
+        padding-bottom: 2em;
+        transition: .3s;
+    }
+
+    .fa-brands:hover{
+        color: var(--winter_morn);
+    }
+
 }

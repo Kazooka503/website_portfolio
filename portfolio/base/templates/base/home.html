@@ -2,6 +2,8 @@
 <!DOCTYPE html>
     <html>
         <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,84 +12,107 @@
             <title>Austin Krzciok</title>
         </head>
         <body>
-            <div id="main" class="container">
+            <div id="main" class="container align-items-center">
                 <div class="row">
-                    <div id="left-section" class="col">
-                        <div class="sticky-top">
-                            <div class="row">
-                            <div id="profile-wrapper" class="card card-body border-0 h-100 ">
-                            <h1 id="title_header">Austin Krzciok</h1>
-                            <h5 id="title_subheader">Full Stack Software and Web Developer</h5>
-                            <p>I build software and web applications that solve problems, <br>
-                            they also look good too!</p>
-                            </div>
-                            </div>
-                            <div class="row">
-                            <nav>
-                            <div class="nav-menu">
-                            <a class="nav-link active" href="#"><hr class="nav-line active-line"/>About</a>
-                            <a class="nav-link" href="#"><hr class="nav-line"/>Experience</a>
-                            <a class="nav-link" href="#"><hr class="nav-line"/>Projects</a>
-                            </div>
-                            </nav>
+                    <div id="left-section" class="col-sm">
+                            <div id="left-section-container" class="row sticky-top">
+                                <div class="col" style="height: 100%;">
+                                    <div class="row" style="height: 65%;">
+                                        <div class="col">
+                                            <div class="row">
+                                                <div class="col-8">
+                                                    <h1 id="title_header">Austin Krzciok</h1>
+                                                    <h5 id="title_subheader">Full Stack Software and Web Developer</h5>
+                                                    <p id="subheader-content">I build software and web applications that solve problems, they
+                                                    also look good too!</p>
+                                                </div>
+                                            </div>
+                                            <div id="nav-row" class="row">
+                                                <nav>
+                                                    <div class="nav-menu">
+                                                        <a class="nav-link active" href="#about"><hr class="nav-line active-line"/>About</a>
+                                                        <a class="nav-link" href="#exp"><hr class="nav-line"/>Experience</a>
+                                                        <a class="nav-link" href="#proj"><hr class="nav-line"/>Projects</a>
+                                                    </div>
+                                                </nav>
+                                            </div>
+                                    </div>
+                                    <div class="row" style="height: 100%">
+                                        <div class="col align-self-end">
+                                            <a href="#"><i class="fa-brands fa-github fa-xl"></i></a>
+                                             <a href="#"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+                                             <a href="#"><i class="fa-brands fa-square-instagram fa-xl"></i></a>
+                                             <a href="#"><i class="fa-brands fa-reddit fa-xl"></i></a>
+                                             <a href="#"><i class="fa-brands fa-facebook fa-xl"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div id="right-section" class="col">
-                        <div class="row profile-row">
-                            <div class="card card-body border-0 h-100">
-                                <p>Back in the early 2000s I decided to try my hand at creating custom MySpace themes
-                                and I fell head first into the rabbit hole of coding and web development. Fast-forward
-                                to today, and I've had the privilege of building software for a <a class="work-link" href="https://active-track.com/" target="_blank">livestream startup</a>, a
-                                <a class="work-link" href="https://www.novuslabs.com/" target="_blank">global engineering solutions provider</a>, and an
-                                <a class="work-link" href="https://learncodinganywhere.com/ProsperITConsulting" target="_blank">information technology consultation firm.</a>
-                                </p>
-                                <p>
-                                During my time in development I've worked extensively in both front-end and back-end
-                                operations, architecting the structure and presentation of web and
-                                software applications. I'm well versed in Linux/Debian based systems and have direct
-                                work experience managing custom developed remote cloud services and servers. I am well
-                                suited to working independently in remote environments and have spent time working in
-                                AGILE/SCRUM teams.
-                                </p>
-                                <p>
-                                In my off time I'm usually exploring new places with my dog Loki, diving into the
-                                <a class="work-link" href="https://www.instagram.com/brightsidesocialclub/">live music scene here in Portland</a>,
-                                going to <a class="work-link" href="https://www.timbers.com/schedule/">soccer games</a>,
-                                or nerding out on things I find on the web.
-                                </p>
-                                <p>
-                                I'm currently open for new roles and experiences, please don't hesitate to reach out if
-                                you would like to collaborate on your project!
-                                </p>
-                            </div>
-                        </div>
-                        <div class="row wh-row">
-                            <div class="col-3">
-                                <h6 class="year-header">2020 - 2023</h6>
-                            </div>
-                            <div class="col-9">
-                                <div class="row">
-                                   <h6 class="job-header">Software Developer <span class="accent">•</span> Novus Labs</h6>
+                    <div id="right-section" class="col-sm">
+                            <div id="about" class="row profile-row">
+                                <div class="sticky-header card card-body border-0">
+                                    <h4 class="sticky-header-content">About</h4>
                                 </div>
-                                <div class="row">
-                                    <p class="job-content">Built and maintained critical components used to construct client's frontend, backend,
-                                    and entire web-product architecture. Worked closely with cross-functional teams, including other
-                                    developers, product managers, and Q/A engineers to implement features, services, and upgrades
-                                    for a variety of use-cases.</p>
+                                <div class="card card-body border-0 h-100">
+                                    <p>Back in the early 2000s I decided to try my hand at creating custom MySpace themes
+                                    and I fell head first into the rabbit hole of coding and web development. Fast-forward
+                                    to today, and I've had the privilege of building software for a <a class="work-link" href="https://active-track.com/" target="_blank">livestream startup</a>, a
+                                    <a class="work-link" href="https://www.novuslabs.com/" target="_blank">global engineering solutions provider</a>, and an
+                                    <a class="work-link" href="https://learncodinganywhere.com/ProsperITConsulting" target="_blank">information technology consultation firm.</a>
+                                    </p>
+                                    <p>
+                                    During my time in development I've worked extensively in both front-end and back-end
+                                    operations, architecting the structure and presentation of web and
+                                    software applications. I'm well versed in Linux/Debian based systems and have direct
+                                    work experience managing custom developed remote cloud services and servers. I am well
+                                    suited to working independently in remote environments and have spent time working in
+                                    AGILE/SCRUM teams.
+                                    </p>
+                                    <p>
+                                    In my off time I'm usually exploring new places with my dog Loki, diving into the
+                                    <a class="work-link" href="https://www.instagram.com/brightsidesocialclub/">live music scene here in Portland</a>,
+                                    going to <a class="work-link" href="https://www.timbers.com/schedule/">soccer games</a>,
+                                    or nerding out on things I find on the web.
+                                    </p>
+                                    <p>
+                                    I'm currently open for new roles and experiences, please don't hesitate to reach out if
+                                    you would like to collaborate on your project!
+                                    </p>
                                 </div>
-                                <span class="badge badge-skill">JavaScript</span> <span class="badge badge-skill">Python</span>
-                                <span class="badge badge-skill">Django</span> <span class="badge badge-skill">AWS</span>
-                                <span class="badge badge-skill">Java</span>
                             </div>
-                        </div>
-                        <div class="row wh-row">
+                            <div id="exp" class="row exp-row">
+                                <div class="sticky-header card card-body border-0">
+                                    <h4 class="sticky-header-content">Experience</h4>
+                                </div>
+                                <div class="row wh-row">
+                                    <div class="col-3">
+                                        <h6 class="year-header">2020 - 2023</h6>
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="row">
+                                           <h6 class="job-header">Software Developer <span class="accent">•</span> Novus Labs <span class="link-arrow">↠</span></h6>
+                                        </div>
+                                        <div class="row">
+                                            <p class="job-content">Built and maintained critical components used to construct client's frontend, backend,
+                                            and entire web-product architecture. Worked closely with cross-functional teams, including other
+                                            developers, product managers, and Q/A engineers to implement features, services, and upgrades
+                                            for a variety of use-cases.</p>
+                                        </div>
+                                        <span class="badge badge-skill">JavaScript</span> <span class="badge badge-skill">Python</span>
+                                        <span class="badge badge-skill">Django</span> <span class="badge badge-skill">AWS</span>
+                                        <span class="badge badge-skill">Java</span>
+                                    </div>
+                                    <a href="https://www.novuslabs.com/" target="_blank" class="stretched-link"></a>
+                                </div>
+                                <div class="row wh-row">
                             <div class="col-3">
                                 <h6 class="year-header">2020</h6>
                             </div>
                             <div class="col-9">
                                 <div class="row">
-                                   <h6 class="job-header">Dotnet Developer <span class="accent">•</span> Prosper IT Consulting</h6>
+                                   <h6 class="job-header">Dotnet Developer <span class="accent">•</span> Prosper IT Consulting <span class="link-arrow">↠</span></h6>
                                 </div>
                                 <div class="row">
                                     <p class="job-content">Immersed myself in an Agile/Scrum development setting, collaborating with a team to
@@ -99,16 +124,16 @@
                                 <span class="badge badge-skill">C#</span> <span class="badge badge-skill">ASP.NET</span>
                                 <span class="badge badge-skill">.NET Framework</span> <span class="badge badge-skill">MVC</span>
                                 <span class="badge badge-skill">AGILE/SCRUM</span>
-
                             </div>
+                            <a href="https://www.learncodinganywhere.com/ProsperITConsulting" target="_blank" class="stretched-link"></a>
                         </div>
-                        <div class="row wh-row">
+                                <div class="row wh-row">
                             <div class="col-3">
                                 <h6 class="year-header">2020</h6>
                             </div>
                             <div class="col-9">
                                 <div class="row">
-                                   <h6 class="job-header">Django Developer <span class="accent">•</span> Prosper IT Consulting</h6>
+                                   <h6 class="job-header">Django Developer <span class="accent">•</span> Prosper IT Consulting <span class="link-arrow">↠</span></h6>
                                 </div>
                                 <div class="row">
                                     <p class="job-content">Immersed myself in an Agile/Scrum development setting, collaborating closely with
@@ -120,18 +145,96 @@
                                 <span class="badge badge-skill">SQL</span> <span class="badge badge-skill">Python</span>
                                 <span class="badge badge-skill">Django</span>
                                 <span class="badge badge-skill">JavaScript</span> <span class="badge badge-skill">AGILE/SCRUM</span>
-
                             </div>
+                            <a href="https://www.learncodinganywhere.com/ProsperITConsulting" class="stretched-link" target="blank"></a>
                         </div>
-                        <div class="row profile-row">
-                            <a href="#" class="cv-link">View Full Resume <span class="arrow">↱</span></a>
-                        </div>
+                            </div>
+                            <div class="row profile-row">
+                                    <a href="https://drive.google.com/file/d/1JqTpv5MbzdFZdw90553jLAj9y4KXlmHJ/view?usp=sharing" target="_blank" class="cv-link">View Full Resume <span class="arrow">↱</span></a>
+                                </div>
+                            <div id="proj" class="row proj-row">
+                                 <div class="sticky-header card card-body border-0">
+                                    <h4 class="sticky-header-content">Projects</h4>
+                                </div>
+                                <div class="row wh-row">
+                                    <div class="col-3">
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="row">
+                                            <h6 class="job-header">ActiveTrack Web App <span class="link-arrow">↠</span></h6>
+                                        </div>
+                                        <div class="row">
+                                            <p class="job-content">
+                                                Handed off full stack web application designed to provide livestreams of outdoor marathons.
+                                                Implemented RTMP streaming servers powered by NGINX.
+                                                Integrated Ai facial recognition via API calls to allow
+                                                for custom product purchases. Integrated third party JavaScript libraries for
+                                                online livestream viewing and payment processing.
+                                            </p>
+                                        </div>
+                                        <span class="badge badge-skill">Django</span> <span class="badge badge-skill">Python</span>
+                                        <span class="badge badge-skill">AWS</span> <span class="badge badge-skill">JavaScript</span>
+                                        <span class="badge badge-skill">MongoDB</span> <span class="badge badge-skill">NGINX</span>
+                                        <span class="badge badge-skill">HTML & CSS</span> <span class="badge badge-skill">REST Framework</span>
+                                    </div>
+                                    <a href="https://www.active-track.com/" class="stretched-link" target="blank"></a>
+                                </div>
+                                <div class="row wh-row">
+                                <div class="col-3">
+
+                                </div>
+                                <div class="col-9">
+                                <div class="row">
+                                    <h6 class="job-header">Events Web App <span class="link-arrow">↠</span></h6>
+                                </div>
+                                <div class="row">
+                                    <p class="job-content">
+                                        Next-js powered full stack web application that allows for viewing upcoming
+                                        events pulled from an external database. Allows users to register to events
+                                        and updates database with client data.
+                                    </p>
+                                </div>
+                                <span class="badge badge-skill">NextJS</span> <span class="badge badge-skill">Server-Side Rendering </span>
+                                    <span class="badge badge-skill">Data Fetching</span> <span class="badge badge-skill">API Routing</span>
+                                    <span class="badge badge-skill">React</span>
+                                </div>
+                                <a href="https://next-js-project-574b.vercel.app/" class="stretched-link" target="blank"></a>
+                                </div>
+                                <div class="row wh-row profile-row">
+                                <div class="col-3">
+
+                                </div>
+                                <div class="col-9">
+                                <div class="row">
+                                <h6 class="job-header">ASP.NET CMS <span class="link-arrow">↠</span></h6>
+                                </div>
+                                <div class="row">
+                                <p class="job-content">
+                                    This project was both an exercise in the Agile/Scrum method of project management
+                                    and a great experience in diving into the inner workings of ASP.NET MVC as well
+                                    as Entity Framework.
+                                </p>
+                                </div>
+                                 <span class="badge badge-skill">C#</span> <span class="badge badge-skill">SQL</span>
+                                    <span class="badge badge-skill">ASP.NET</span> <span class="badge badge-skill">HTML & CSS</span>
+                                </div>
+                                     <a href="https://github.com/Kazooka503/ASP.NET-CMS" class="stretched-link" target="blank"></a>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-6">
+                                     <p class="build-text">
+                                     Designed with <a href="#" class="build-link" target="_blank">Adobe Color</a> and coded in <a href="https://www.jetbrains.com/pycharm/" class="build-link" target="_blank">PyCharm</a>.
+                                     Built with <a href="https://www.djangoproject.com/" class="build-link" target="_blank">Django</a> and <a href="https://getbootstrap.com/" class="build-link" target="_blank">Bootstrap 5</a>, deployed on <a href="https://www.heroku.com/python" class="build-link" target="_blank">Heroku</a>. Features <a href="https://fonts.google.com/specimen/DM+Serif+Display" class="build-link" target="_blank">DM Serif</a> typeface.
+                                    </p>
+                                </div>
+                            </div>
                     </div>
                 </div>
             </div>
+            <script src="https://kit.fontawesome.com/b9c60c3217.js" crossorigin="anonymous"></script>
         </body>
     </html>
-
 <script>
     const btns = document.getElementsByClassName("nav-link");
     for (var i = 0; i < btns.length; i++){
@@ -146,7 +249,9 @@
     }
 </script>
 
+<!--                                <div class="row">-->
 
+<!--                                </div>-->
 
 
 
