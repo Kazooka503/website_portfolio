@@ -135,7 +135,7 @@ STATICFILES_DIRS = [
 #     django_heroku.settings(locals())
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-django_heroku.settings(locals())
+django_heroku.settings(locals(), staticfiles=False)
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
