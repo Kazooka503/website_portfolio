@@ -123,7 +123,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 STATIC_URL = 'staticfiles/'
 MEDIA_URL = 'images/'
 
@@ -131,14 +130,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'staticfiles')
 ]
 
-
-STORAGES = {
-    # ...
-    "staticfiles": {
-        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
-    },
-}
-
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 django_heroku.settings(locals())
 
 # STATICFILES_DIRS = [
