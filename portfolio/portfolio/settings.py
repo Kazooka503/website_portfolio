@@ -133,6 +133,10 @@ STORAGES = {
     },
 }
 django_heroku.settings(locals())
+config = locals()
+config['STORAGES']['staticfiles'] = config['STATICFILES_STORAGE']
+del config['STATICFILES_STORAGE']
+
 # STATICFILES_DIRS = [
 #     os.path.join(BASE_DIR, 'staticfiles')
 # ]
