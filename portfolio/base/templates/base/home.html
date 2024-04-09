@@ -12,7 +12,8 @@
             <title>Austin Krzciok</title>
         </head>
         <body>
-            <div id="main" class="container align-items-center">
+        <div id="main" class="container-fluid">
+               <div class="container align-items-center">
                 <div class="row">
                     <div id="left-section" class="col-sm">
                             <div id="left-section-container" class="row sticky-top">
@@ -55,7 +56,7 @@
                                 <div class="sticky-header card card-body border-0">
                                     <h4 class="sticky-header-content">About</h4>
                                 </div>
-                                <div class="card card-body border-0 h-100">
+                                <div class="col">
                                     <p>Back in the early 2000s I decided to try my hand at creating custom MySpace themes
                                     and I fell head first into the rabbit hole of coding and web development. Fast-forward
                                     to today, and I've had the privilege of building software for a <a class="work-link" href="https://active-track.com/" target="_blank">livestream startup</a>, a
@@ -166,10 +167,10 @@
                                         <div class="row">
                                             <p class="job-content">
                                                 Handed off full stack web application designed to provide livestreams of outdoor marathons.
-                                                Implemented RTMP streaming servers powered by NGINX.
-                                                Integrated Ai facial recognition via API calls to allow
-                                                for custom product purchases. Integrated third party JavaScript libraries for
-                                                online livestream viewing and payment processing.
+                                                Implemented RTMP streaming servers powered by NGINX. Incorporated AI facial recognition
+                                                via API calls to enable personalized product purchases. Integrated third
+                                                party JavaScript libraries for online livestream viewing and payment
+                                                processing.
                                             </p>
                                         </div>
                                         <span class="badge badge-skill">Django</span> <span class="badge badge-skill">Python</span>
@@ -232,10 +233,18 @@
                     </div>
                 </div>
             </div>
+        </div>
             <script src="https://kit.fontawesome.com/b9c60c3217.js" crossorigin="anonymous"></script>
         </body>
     </html>
 <script>
+    const injectCursorPosition = ({ x, y }) => {
+        document.documentElement.style.setProperty('--x', Math.round(x))
+        document.documentElement.style.setProperty('--y', Math.round(y))
+    }
+
+    document.body.addEventListener('pointermove', injectCursorPosition)
+
     const btns = document.getElementsByClassName("nav-link");
     for (var i = 0; i < btns.length; i++){
         btns[i].addEventListener("click", function(){
