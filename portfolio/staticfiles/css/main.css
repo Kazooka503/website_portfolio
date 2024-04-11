@@ -165,6 +165,15 @@ ul{
     transition: 1s;
 }
 
+.proj-img{
+    border-radius: 5px;
+    width: 100%;
+}
+
+.proj-git-img{
+    width: 75%
+}
+
 .accent{
     font-size: 1rem;
 }
