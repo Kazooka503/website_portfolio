@@ -32,6 +32,12 @@
     background-attachment: fixed;
 }
 
+@-moz-document url-prefix(){
+    #main{
+        background: var(--black_feather);
+    }
+}
+
 .card{
     background-color: var(--black_feather);
 }
